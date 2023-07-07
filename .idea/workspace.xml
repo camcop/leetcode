@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4c2f07b-0e06-4662-87f9-72408d59a302" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/leetcode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/leetcode/GroupAnagrams49.java" afterDir="false" />
+    <list default="true" id="c4c2f07b-0e06-4662-87f9-72408d59a302" name="Changes" comment="GroupAnagrams49 refactor solution">
+      <change beforePath="$PROJECT_DIR$/src/com/leetcode/GroupAnagrams49.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/leetcode/GroupAnagrams49.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,17 +45,39 @@
       <option name="presentableId" value="Default" />
       <updated>1688733313086</updated>
     </task>
+    <task id="LOCAL-00001" summary="GroupAnagrams49 solution">
+      <option name="closed" value="true" />
+      <created>1688737647204</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688737647204</updated>
+    </task>
+    <task id="LOCAL-00002" summary="GroupAnagrams49 refactor solution">
+      <option name="closed" value="true" />
+      <created>1688737689403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688737689403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/leetcode/GroupAnagrams49.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GroupAnagrams49 solution" />
+    <MESSAGE value="GroupAnagrams49 refactor solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="GroupAnagrams49 refactor solution" />
   </component>
 </project>
