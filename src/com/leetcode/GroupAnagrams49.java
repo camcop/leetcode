@@ -12,13 +12,11 @@ public class GroupAnagrams49 {
             Arrays.sort(chars);
             String charstring = new String(chars);
 
-            if (map.get(charstring) == null) {
-                List<String> list = new ArrayList<String>();
-                list.add(s);
-                map.put(charstring, list);
-            } else {
-                map.get(charstring).add(s);
+            if (!map.containsKey(charstring)) {
+                map.put(charstring, new ArrayList<>());
             }
+            map.get(charstring).add(charstring);
+
         }
 
         List<List<String>> output = new ArrayList<>();
