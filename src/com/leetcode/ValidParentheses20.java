@@ -12,8 +12,7 @@ public class ValidParentheses20 {
         Stack<Character> stack = new Stack<>();
 
         for (Character c: s.toCharArray()) {
-            int index = open.indexOf(c);
-            if (index != -1)
+            if (open.indexOf(c) != -1)
                 stack.add(c);
             else {
                 if (stack.empty() || close.indexOf(c) != open.indexOf(stack.pop()))
