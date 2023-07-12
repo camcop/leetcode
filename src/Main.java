@@ -16,7 +16,7 @@ public class Main {
 //        System.out.println(ValidParentheses20.isValid("(]"));
 //        System.out.println(ValidParentheses20.isValid("()"));
 
-        char[] row1 = new char[] {'8','3','.','.','7','.','.','.','.'};
+        char[] row1 = new char[] {'5','3','.','.','7','.','.','.','.'};
         char[] row2 = new char[] {'6','.','.','1','9','5','.','.','.'};
         char[] row3 = new char[] {'.','9','8','.','.','.','.','6','.'};
         char[] row4 = new char[] {'8','.','.','.','6','.','.','.','3'};

@@ -30,23 +30,14 @@ public class ValidSudoku36 {
                 if (!boxes.containsKey(box))
                     boxes.put(box, new HashSet<>());
 
-                if (rows.get(i).contains(cell)) {
+                if (!rows.get(i).add(cell))
                     return false;
-                }
-                else
-                    rows.get(i).add(cell);
 
-                if (cols.get(j).contains(cell)) {
+                if (!cols.get(j).add(cell))
                     return false;
-                }
-                else
-                    cols.get(j).add(cell);
 
-                if (boxes.get(box).contains(cell)) {
+                if (!boxes.get(box).add(cell))
                     return false;
-                }
-                else
-                    boxes.get(box).add(cell);
             }
         }
 
