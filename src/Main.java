@@ -1,6 +1,7 @@
 import com.leetcode.GroupAnagrams49;
 import com.leetcode.TopKFrequentElements347;
 import com.leetcode.ValidPalindrome125;
+import com.leetcode.ValidParentheses20;
 
 import java.util.Arrays;
 
@@ -13,7 +14,10 @@ public class Main {
 //        int[] ints = new int[] {1,1,1,2,2,3};
 //        System.out.println(Arrays.toString(TopKFrequentElements347.topKFrequent(ints, 2)));
 
-        System.out.println(ValidPalindrome125.isPalindrome("abcdba"));
+//        System.out.println(ValidPalindrome125.isPalindrome("abcdba"));
+
+        System.out.println(ValidParentheses20.isValid("(]"));
+        System.out.println(ValidParentheses20.isValid("()"));
 
     }
 }
