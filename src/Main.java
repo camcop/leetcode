@@ -38,9 +38,9 @@ public class Main {
 //        System.out.println(ValidSudoku36.isValidSudoku(board));
 
 
-//        int[] numbers = new int[] {2,7,11,15};
-        int[] numbers = new int[] {-1,0};
-        int target = -1;
+        int[] numbers = new int[] {2,7,11,15};
+//        int[] numbers = new int[] {-1,0};
+        int target = 9;
         System.out.println(Arrays.toString(TwoSumIIInputArrayIsSorted167.twoSum(numbers, target)));
     }
 }
