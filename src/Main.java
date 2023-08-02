@@ -64,24 +64,24 @@ public class Main {
 //        System.out.println(ReverseLinkedList206.reverseList(node));
 
 
-        MergeTwoSortedLists21.ListNode node = new MergeTwoSortedLists21.ListNode(1);
-        MergeTwoSortedLists21.ListNode node2 = new MergeTwoSortedLists21.ListNode(2);
-        MergeTwoSortedLists21.ListNode node3 = new MergeTwoSortedLists21.ListNode(3);
-        MergeTwoSortedLists21.ListNode node4 = new MergeTwoSortedLists21.ListNode(4);
-        MergeTwoSortedLists21.ListNode node5 = new MergeTwoSortedLists21.ListNode(5);
-        node.next = node2;
-        node2.next = node3;
-        node3.next = node4;
-        node4.next = node5;
-        MergeTwoSortedLists21.ListNode nodeB = new MergeTwoSortedLists21.ListNode(0);
-        MergeTwoSortedLists21.ListNode nodeB2 = new MergeTwoSortedLists21.ListNode(1);
-        MergeTwoSortedLists21.ListNode nodeB3 = new MergeTwoSortedLists21.ListNode(4);
-        MergeTwoSortedLists21.ListNode nodeB4 = new MergeTwoSortedLists21.ListNode(6);
-        MergeTwoSortedLists21.ListNode nodeB5 = new MergeTwoSortedLists21.ListNode(7);
-        nodeB.next = nodeB2;
-        nodeB2.next = nodeB3;
-        nodeB3.next = nodeB4;
-        nodeB4.next = nodeB5;
+        MergeTwoSortedLists21.ListNode node = new MergeTwoSortedLists21.ListNode(2);
+//        MergeTwoSortedLists21.ListNode node2 = new MergeTwoSortedLists21.ListNode(2);
+//        MergeTwoSortedLists21.ListNode node3 = new MergeTwoSortedLists21.ListNode(3);
+//        MergeTwoSortedLists21.ListNode node4 = new MergeTwoSortedLists21.ListNode(4);
+//        MergeTwoSortedLists21.ListNode node5 = new MergeTwoSortedLists21.ListNode(5);
+//        node.next = node2;
+//        node2.next = node3;
+//        node3.next = node4;
+//        node4.next = node5;
+        MergeTwoSortedLists21.ListNode nodeB = new MergeTwoSortedLists21.ListNode(1);
+//        MergeTwoSortedLists21.ListNode nodeB2 = new MergeTwoSortedLists21.ListNode(1);
+//        MergeTwoSortedLists21.ListNode nodeB3 = new MergeTwoSortedLists21.ListNode(4);
+//        MergeTwoSortedLists21.ListNode nodeB4 = new MergeTwoSortedLists21.ListNode(6);
+//        MergeTwoSortedLists21.ListNode nodeB5 = new MergeTwoSortedLists21.ListNode(7);
+//        nodeB.next = nodeB2;
+//        nodeB2.next = nodeB3;
+//        nodeB3.next = nodeB4;
+//        nodeB4.next = nodeB5;
         System.out.println(MergeTwoSortedLists21.mergeTwoLists(node, nodeB));
 
 

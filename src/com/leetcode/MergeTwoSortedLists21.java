@@ -33,26 +33,40 @@ public class MergeTwoSortedLists21 {
         if (list2 == null)
             return list1;
 
-        ListNode lista = (list1.val <= list2.val) ? list1 : list2;
-        ListNode head = lista;
-        ListNode listb = (list1.val <= list2.val) ? list2 : list1;
+        ListNode combined = (list1.val <= list2.val) ? list1 : list2;
+        ListNode first = combined;
+        ListNode nexta = combined.next;
+        ListNode nextb = (list1.val <= list2.val) ? list2 : list1;
+        ListNode temp;
 
-        while (lista.next != null || listb.next != null) {
-            if (lista.next == null) {
-                lista.next = listb;
+        while (nexta != null || nextb != null) {
+            if (nexta == null) {
+                temp = nextb.next;
+                combined.next = nextb;
+                combined = nextb;
+                nextb = temp;
             }
-            if (lista.next.val <= listb.val) {
-                lista = lista.next;
+            else if (nextb == null) {
+                temp = nexta.next;
+                combined.next = nexta;
+                combined = nexta;
+                nexta = temp;
             }
-            else {
-                ListNode temp = lista.next;
-                lista.next = listb;
-                lista = listb;
-                listb = temp;
+            else if (nextb.val <= nexta.val) {
+                temp = nextb.next;
+                combined.next = nextb;
+                combined = nextb;
+                nextb = temp;
+            }
+            else if (nexta.val <= nextb.val) {
+                temp = nexta.next;
+                combined.next = nexta;
+                combined = nexta;
+                nexta = temp;
             }
         }
 
-        return head;
+        return first;
     }
 
 }
