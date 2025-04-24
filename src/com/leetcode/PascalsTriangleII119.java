@@ -18,7 +18,7 @@ public class PascalsTriangleII119 {
             for (int j = 0; j < i + 1; j++) {
                 if (j == 0 || j == i) {
                     n = 1;
-                } if (j != 0 && j != i) {
+                } else {
                     n = triangle.get(i - 1).get(j - 1) + triangle.get(i - 1).get(j);
                 }
             row.add(n);
