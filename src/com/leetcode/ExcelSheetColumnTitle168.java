@@ -7,23 +7,14 @@ public class ExcelSheetColumnTitle168 {
 
     public String convertToTitle(int columnNumber) {
 
-        List<Integer> base26 = new ArrayList<>();
+        StringBuilder result = new StringBuilder();
 
         while (columnNumber-- > 0) {
-            int minor = columnNumber % 26;
-            base26.add(0, minor);
-            columnNumber = columnNumber / 26;
+            result.insert(0, (char) ('A' + columnNumber % 26));
+            columnNumber /= 26;
         }
 
-        char[] alpha = new char[] { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q',
-                'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
-
-        StringBuilder out = new StringBuilder();
-        for (int n : base26) {
-            out.append(alpha[n]);
-        }
-
-        return out.toString();
+        return result.toString();
 
     }
 
