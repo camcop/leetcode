@@ -36,11 +36,7 @@ public class PalindromeLinkedList234 {
         while (head != null) {
             if (index < length / 2) {
                 stack.push(head.val);
-            } else if (length % 2 != 0 && index == length / 2) {
-                index++;
-                head = head.next;
-                continue;
-            } else if (index >= length / 2) {
+            } else if (!(length % 2 != 0 && index == length / 2) && (index >= length / 2)) {
                 if (head.val != stack.pop())
                     return false;
             }
