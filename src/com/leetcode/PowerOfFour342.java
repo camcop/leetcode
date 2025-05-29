@@ -12,4 +12,8 @@ public class PowerOfFour342 {
         return n==4 || n==1;
     }
 
+    public boolean isPowerOfFourNoLoops(int n) {
+        return (Math.log(n) / Math.log(4) % 1 == 0);
+    }
+
 }
