@@ -1,20 +1,20 @@
 package com.leetcode;
 
-import java.util.ArrayList;
-
-import static java.util.stream.Collectors.toCollection;
+import java.util.Arrays;
 
 public class FindTheDifference389 {
 
     public char findTheDifference(String s, String t) {
-        ArrayList<Character> s_list = s.chars().mapToObj(c -> (char) c).collect(toCollection(ArrayList::new));
-        ArrayList<Character> t_list = t.chars().mapToObj(c -> (char) c).collect(toCollection(ArrayList::new));
+        char[] s_list = s.toCharArray();
+        Arrays.sort(s_list);
+        char[] t_list = t.toCharArray();
+        Arrays.sort(t_list);
 
-        for (Character c : s_list) {
-            t_list.remove(c);
+        for (int i = 0; i < s_list.length; i++) {
+            if (s_list[i] != t_list[i]) return t_list[i];
         }
 
-        return (char) t_list.stream().findFirst().get();
+        return t_list[t_list.length - 1];
     }
 }
 
